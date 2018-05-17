@@ -1,0 +1,212 @@
+/*
+@Author: William Thompson (Code 6)
+@Version: 1.0
+@Date Started: 04/20/2018
+*/
+/*fonts cdn*/
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Nunito:600');
+/*CSS Variables*/
+:root {
+    --background:#333333;
+    --main-color: #008080;
+    --main-accent-color:#ffffff;
+    --second-accent-color:#c0c0c0;
+    /*imageHeader*/
+    --imageHeader-font:'Catamaran', sans-serif;
+    --main-content-font:'Catamaran', sans-serif;
+    /*Main element*/
+    --main-element-bg:none; /*Background of main*/
+    --main-element-color:#ffffff;/*text color of main*/
+}
+/*Standard Body style*/
+body{
+  margin: 0;
+  background: var(--background);
+}
+/*Navigation Styles*/
+
+/*appBar*/
+.appBar{
+  background: var(--main-color);
+  height: 70px;
+  font-family: 'Catamaran', sans-serif;
+}
+.appBar img{
+  float: left;
+  width: 40px;
+  height: auto;
+  background: var(--main-accent-color);
+  padding: 5px;
+  margin-top:10px;
+  margin-left: 4px;
+  border-radius: 30px;
+}
+.appBar a{
+  text-decoration: none;
+  color: var(--main-accent-color);
+  font-size: 1.2em;
+}
+.appBar a:hover{
+  border-bottom: var(--main-accent-color);
+  border: 2px solid;
+  border-radius:3px;
+  padding: 2px;
+  transition: .4s;
+}
+.appBar a:focus{
+  border-bottom: var(--main-accent-color);
+  border: 2px solid;
+  border-radius:3px;
+  padding: 2px;
+  transition: .4s;
+}
+.appBar a:active{
+  border-bottom: var(--main-accent-color);
+  border: 2px solid;
+  border-radius:3px;
+  padding: 2px;
+}
+.appBar ul{
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+}
+.appBar ul li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.appBar h1{
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  color: var(--main-accent-color);
+}
+/*appBar-Search*/
+.appBar-Search{
+  background: var(--main-color);
+  height: 70px;
+  font-family: 'Catamaran', sans-serif;
+}
+.appBar-Search img{
+  float: left;
+  width: 40px;
+  height: auto;
+  background: var(--main-accent-color);
+  padding: 5px;
+  margin-top:10px;
+  margin-left: 4px;
+  border-radius: 30px;
+}
+.appBar-Search a{
+  text-decoration: none;
+  color: var(--main-accent-color);
+  font-size: 1.2em;
+}
+.appBar-Search a:hover{
+  border-bottom: var(--main-accent-color);
+  border: 2px solid;
+  border-radius:3px;
+  padding: 2px;
+  transition: .4s;
+}
+.appBar-Search a:focus{
+  border-bottom: var(--main-accent-color);
+  border: 2px solid;
+  border-radius:3px;
+  padding: 2px;
+  transition: .4s;
+}
+.appBar-Search ul{
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+}
+.appBar-Search ul li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.appBar-Search h1{
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  color: var(--main-accent-color);
+}
+.appBar-Search input{
+  float: right;
+  width: 300px;
+  background: var(--main-accent-color);
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+.appBar-Search input:focus{
+  background: #f2f2f2;
+  outline-style: none;
+  transition: .4s;
+}
+.appBar-Search button{
+  float: right;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 50px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+  width: 50px;
+  color: var(--main-color);
+  background: var(--main-accent-color);
+  font-size: 1.5em;
+}
+/*Miscellanius UI*/
+.seperation-line{
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+}
+/*Image Headers*/
+.imageHeader{
+  height: 300px;
+  background: var(--main-accent-color);
+  background-image: url("suit.jpeg");
+  margin: 0;
+  /*Insert a background image*/
+}
+.imageHeader h1{
+  padding-top: 80px;
+  font-size: 3em; /*imageHeader H1 font-size*/
+  font-family: var(--imageHeader-font);
+  margin: 0;
+  clear: both;
+  text-align: center;
+  color: #ffffff;
+}
+.imageHeader p{
+  text-align: center;
+  font-size: 1.5em;/*imageHeader P font-size*/
+  font-family: var(--imageHeader-font);
+}
+/*Main*/
+.main-1200{
+  margin: 0px auto;
+  background: var(--main-element-bg);
+  max-width: 1200px;
+  color: var(--main-element-color);
+  font-family: var(--main-content-font);
+}
+.footer-normal{
+  min-height: 300px;
+  background: #ffffff;
+  margin: 0;
+  margin-bottom: 0;
+}
+.footer-bottom{
+  background: var(--main-color);
+  height: 50px;
+  margin: 0;
+}
